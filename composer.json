@@ -1,0 +1,15 @@
+{
+  "name": "volonte/elearning-platform",
+  "description": "E-Learning Platform with PHP and PostgreSQL",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "ext-pdo": "*",
+    "ext-pdo_pgsql": "*"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "echo 'Dependencies installed successfully'"
+    ]
+  }
+}
