@@ -1,12 +1,12 @@
 services:
   # PostgreSQL Database Service
-  - type: postgresql
+  - type: postgres
     name: coding-courses-db
     plan: free
     ipAllowList: [] # Allow all connections (for development)
     databaseName: coding_courses
     postgresqlVersion: 15
-    initScriptPath: ./init.sql # Add this line to auto-initialize database
+    initScriptPath: ./init.sql
 
   # PHP Web Service
   - type: web
@@ -21,4 +21,4 @@ services:
           name: coding-courses-db
           property: connectionString
       - key: PHP_VERSION
-        value: 8.2
+        value: "8.2"
